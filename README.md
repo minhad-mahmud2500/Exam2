@@ -5,84 +5,64 @@
 
 Each Token / Lexical should be seperated by a space
 
-Code starts with `begin` and ends with `end`. Between the block will have all the statements.
+Code starts with `GO` and ends with `GOAL`.All the statements are between the blocks
 
 ## Types of statements
-
 - Declaration
 - Assign
 - Condition
 - Loop
-
 ### Declaration Statement
-
-Starts with a Integer type keyword, followed by variable name, and ends with a `;`;
-
+Begins with a Integer type keyword, followed by variable name, and ends with a `;`;
 The variable is stored in a hashmap, **key** is the variable name and the **value** is an array. `[type, value]`.
-
 ### Assign Statement
-
 The statement starts with a variable that exists in the stack. If it doesn't, throw an error.
 Then follows an `=` token with the expression it should be assign to and ends with `;`;
-
 ### Condition Statement
-
 The statement starts with keyword `cond`, followed with `( boolean expression )` and `{ statement }`.
-
 ### Loop Statement
-
 The statement starts with keyword `repeat`, followed with `( boolean expression)` and `{ statement }`. Statement will keep running, till boolean expression is false.
-
 ### Mathematical Expressions
-
-An expression is valid, if and only if, it matches with the following regex.
-
+An expression is valid,only if it matches with the following regex.
 Each number, and token have to be **separated** by a space.
-
 `/(-?\d|[a-zA-Z])*( [+|-|*|\/] (-?\d+|[a-zA-Z]+))*/`
-
 Valid expression:
-
-- -2
-- 2 + -10
-- 2 + 10 + numOne
-
+- -7
+- 7 + -13
+- 7 + 13 + numOne
 Invalid expression:
-
-- 2+10
-- -2+numOne
-
+- 7+13
+- -13+numOne
 ## Tokens
-
 ### Mathematical Operators
 
 | Token Code       | Operation | Regex |
 | ---------------- | --------- | ----- |
-| ADD              | +         | +     |
-| SUB              | -         | -     |
-| MUL              | \*        | \*    |
-| DIV              | /         | /     |
-| PARENTHESISOPEN  | (         | )     |
-| PARENTHESISCLOSE | )         | )     |
+| ADDITION         | +         | +     |
+| SUBTRACTION      | -         | -     |
+| MULTIPLICATION   | \*        | \*    |
+| DIVISION         | /         | /     |
+| PARENTHESOPEN    | (         | )     |
+| PARENTHESCLOSE   | )         | )     |
 
 ### Mathematical Equators
 
 | Token Code | Operation | Regex |
 | ---------- | --------- | ----- |
-| LT         | <         | <     |
-| GT         | >         | >     |
-| LTE        | <=        | <=    |
-| GTE        | >=        | >=    |
-| EQ         | ==        | ==    |
+| IL         | <         | <     |
+| IG         | >         | >     |
+| ILE        | <=        | <=    |
+| IGE        | >=        | >=    |
+| EE         | ==        | ==    |
 | NE         | !=        | !=    |
 
 ### Integer Types
 
 | Token Code | condition                                          | Regex | Size    |
 | ---------- | -------------------------------------------------- | ----- | ------- |
-| SHORT      | -128 <= num <= 127                                 | \d+   | 1 byte  |
-| TALL       | -32768 <= num <= 32767                             | \d+   | 2 bytes |
-| GRANDE     | -2147483648 <= num <= 2147483647                   | \d+   | 4 bytes |
+| CHIBI      | -128 <= num <= 127                                 | \d+   | 1 byte  |
+| MINI       | -32768 <= num <= 32767                             | \d+   | 2 bytes |
+| SMALL      | -2147483648 <= num <= 2147483647                   | \d+   | 4 bytes |
 | VENTI      | -9223372036854775808 <= num <= 9223372036854775808 | \d+   | 8 bytes |
 
 ### Keyword Types
@@ -92,18 +72,18 @@ Invalid expression:
 | VAR        | [a-zA-Z]{6,8} |
 | COND       | cond          |
 | REPEAT     | repeat        |
-| BEGIN      | begin         |
-| END        | end           |
+| GO         | go            |
+| GOAL       | goal          |
 
 ### Extras
 
 | Token Code       | Operation | Regex |
 | ---------------- | --------- | ----- |
 | ASSIGNMENT       | =         | =     |
-| CODEBLOCKOPEN    | {         | {     |
-| CODEBLOCKCLOSE   | }         | }     |
-| PARENTHESISOPEN  | (         | )     |
-| PARENTHESISCLOSE | )         | )     |
+| BLOCKOPEN        | {         | {     |
+| BLOCKCLOSE       | }         | }     |
+| PARENTHESOPEN    | (         | )     |
+| PARENTHESCLOSE   | )         | )     |
 
 ## Priority Order
 
