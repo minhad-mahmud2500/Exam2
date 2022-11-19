@@ -1,8 +1,7 @@
-import stack from "../stack";
-import Statement from "../Statement";
+import { Stack } from "../stack";
+import { Statement } from "../Statement";
 export default function Declaration(statement) {
     const regexMatch = statement.match(/([^;]+);(.*)/);
-    // short variableOne
     const [_, declarationStatement, restStatement] = regexMatch;
     let [type, variable] = declarationStatement.split(" ");
     type = type.trim();
