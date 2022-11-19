@@ -1,4 +1,4 @@
-import { stack } from "../stack";
+import { Stack } from "../stack";
 import { Tokens } from "../misc/Tokens";
 import { Statement } from "../Statement";
 import { Expression } from "../misc/Expression";
