@@ -1,7 +1,7 @@
-import stack from "../stack";
-import Tokens from "../misc/Tokens";
-import Statement from "../Statement";
-import Expression from "../misc/Expression";
+import { stack } from "../stack";
+import { Tokens } from "../misc/Tokens";
+import { Statement } from "../Statement";
+import { Expression } from "../misc/Expression";
 
 export default function Assign(statement: string) {
   const regexMatch = statement.match(/([^;]+);(.*)/)!;
