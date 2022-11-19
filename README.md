@@ -99,14 +99,14 @@ Invalid expression:
 ## Production Rules
 
 ```txt
-<Program> --> Begin <stmt_list> End
+<Program> --> GO <stmt_list> GOAL
 <stmt_list> --> {<stmt> `;`}
 <stmt> --> <if_stmt> | <while_stmt> | <as_s>  | <declaration>
 <if_stmt> --> cond <bool> `{` { <stmt> ';'} `}`
 <while_stmt> --> repeat `{` <bool> { <stmt> ';' } `}`
 <as_s> --> <var> = <expression> `;`
 <declaration> --> <datatype> <var> `;`
-<datatype> --> (SHORT|TALL|GRANDE|VENTI)
+<datatype> --> (CHIBI|MINI|SMALL|REGULAR)
 <var> -->  [a-zA-Z_]{6,8} // our variable rule
 <expression> --> <term> { (`*`|`\` ) <term> }
 <term> --> <term> { (`+`|`-`) <term> }
@@ -125,5 +125,5 @@ E --> (e)               Factor can be an expression in parentheses
 
 ## Is it a LL Grammar?
 
-Yes, the code is read from left to right. And an LL grammar of 1. Read one line ahead before it performs the next actions.
+the code is read from left to right. And an LL grammar of 1. Read one line ahead before it performs the next actions.
 
