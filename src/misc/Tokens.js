@@ -2,7 +2,7 @@ const Tokens = {
     ASSIGN: "=",
     GOAL: "goal",
     GO: "go",
-    COND: "cond",
+    COND: "case",
     REPEAT: "repeat",
     ADDITION: "+",
     SUBTRACTION: "-",
