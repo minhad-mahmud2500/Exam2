@@ -20,7 +20,7 @@ export default function Statement(statement = "") {
     else if (firstWord == Tokens.REPEAT) {
         Loop(statement);
     }
-    else if (firstWord == Tokens.COND) {
+    else if (firstWord == Tokens.CASE) {
         Condition(statement);
     }
     else if (stack[firstWord] != undefined) {
