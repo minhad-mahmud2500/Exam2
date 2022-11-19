@@ -63,7 +63,7 @@ Invalid expression:
 | CHIBI      | -128 <= num <= 127                                 | \d+   | 1 byte  |
 | MINI       | -32768 <= num <= 32767                             | \d+   | 2 bytes |
 | SMALL      | -2147483648 <= num <= 2147483647                   | \d+   | 4 bytes |
-| VENTI      | -9223372036854775808 <= num <= 9223372036854775808 | \d+   | 8 bytes |
+| REGULAR    | -9223372036854775808 <= num <= 9223372036854775808 | \d+   | 8 bytes |
 
 ### Keyword Types
 
