@@ -1,0 +1,26 @@
+GO
+
+  MINI variableOne;
+  variableOne = 2;
+
+  MINI variableTwo;
+  variableTwo = 90 + 100 + (2 + (5 * 2)) * variableOne;
+
+  case (variableOne != variableTwo) {
+    case (variableOne <= variableTwo) {
+      variableOne = variableTwo * 2;
+    }
+  }
+
+  SMALL variableThree;
+  variableThree = 0;
+
+  echo (variableThree <= 5) {
+    variableThree = variableThree + 1;
+
+    case (variableThree == 3) {
+      variableThree = variableThree * 2;
+    }
+  }
+
+GOAL
