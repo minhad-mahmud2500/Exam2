@@ -1,5 +1,5 @@
-import Expression from "./Expression";
-import Tokens from "./Tokens";
+import { Expression } from "./Expression";
+import { Tokens } from "./Tokens";
 export default function BooleanEquation(equation) {
     const { IL, IG, ILE, IGE, EE, NE } = Tokens;
     const equationOperators = [IL, IG, ILE, IGE, EE, NE];
