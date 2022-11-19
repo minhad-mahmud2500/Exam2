@@ -1,5 +1,5 @@
-import stack from "../stack";
-import Tokens from "./Tokens";
+import { Stack } from "../stack";
+import { Tokens } from "./Tokens";
 const { ADDITION, SUBTRACTION, MULTIPLICATION, DIVISION, PARENTHESIS_OPEN, PARENTHESIS_CLOSE } = Tokens;
 class BinaryNode {
     constructor(value = "") {
