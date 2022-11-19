@@ -19,9 +19,9 @@ The variable is stored in a hashmap, **key** is the variable name and the **valu
 The statement starts with a variable that exists in the stack. If it doesn't, throw an error.
 Then follows an `=` token with the expression it should be assign to and ends with `;`;
 ### Condition Statement
-The statement starts with keyword `cond`, followed with `( boolean expression )` and `{ statement }`.
+The statement starts with keyword `case`, followed with `( boolean expression )` and `{ statement }`.
 ### Loop Statement
-The statement starts with keyword `repeat`, followed with `( boolean expression)` and `{ statement }`. Statement will keep running, till boolean expression is false.
+The statement starts with keyword `echo`, followed with `( boolean expression)` and `{ statement }`. Statement will keep running, till boolean expression is false.
 ### Mathematical Expressions
 An expression is valid,only if it matches with the following regex.
 Each number, and token have to be **separated** by a space.
