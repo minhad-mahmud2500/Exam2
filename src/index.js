@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import path from "path";
-import stack from "./stack";
-import Statement from "./Statement";
+import { Stack } from "./stack";
+import { Statement } from "./Statement";
 const main = async () => {
     const filePath = path.resolve(process.cwd(), process.argv[2]);
     // Gets all the statements between begin and end
