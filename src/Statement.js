@@ -1,4 +1,4 @@
-import { stack } from "./stack";
+import { Stack } from "./stack";
 import { DataTypes } from "./misc/DataTypes";
 import { Assign } from "./statements/Assign";
 import { Tokens } from "./misc/Tokens";
