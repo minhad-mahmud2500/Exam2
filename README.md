@@ -42,8 +42,8 @@ Invalid expression:
 | SUBTRACTION      | -         | -     |
 | MULTIPLICATION   | \*        | \*    |
 | DIVISION         | /         | /     |
-| PARENTHESOPEN    | (         | )     |
-| PARENTHESCLOSE   | )         | )     |
+| PARENTHESIS_OPEN | (         | )     |
+| PARENTHESIS_CLOSE| )         | )     |
 
 ### Mathematical Equators
 
