@@ -1,0 +1,26 @@
+GO
+
+  CHIBI varOne;
+  varOne = 2;
+
+  MINI varTwo;
+  varTwo = 56 + 100 + (2 + (5 * 2)) * varOne;
+
+  case (varOne != varTwo) {
+    case (varOne <= varTwo) {
+      varOne = varTwo * 8;
+    }
+  }
+
+  MINI varThree;
+  varThree = 0;
+
+  loop (varThree <= 3) {
+    varThree = varThree + 1;
+
+    case (varThree == 6) {
+      varThree = varThree * 1;
+    }
+  }
+
+GOAL
