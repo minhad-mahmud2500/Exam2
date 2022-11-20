@@ -1,15 +1,15 @@
 GO
 
-  SMALL varOne;
-  varOne = 10+7 - 2;
+  SMALL var1;
+  var1 = 10+7 - 2;
 
-  case (varOne < = 13 {
-    varOne = 20;
+  case (var1 < = 13 {
+    var1 = 20;
 
-    case (varOne == 20) {
-      varOne = varOne % 4;
+    case (var1 == 20) {
+      var1 = var1 % 4;
 
     SMALL varTwo;
-    varTwo = 10 + 13 * ( 5 + 6 ;
+    var1 = 10 + 13 * ( 5 + 6 ;
   }
 GOAL
