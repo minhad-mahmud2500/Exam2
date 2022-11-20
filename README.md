@@ -102,12 +102,12 @@ Invalid expression:
 <Program> --> GO <stmt_list> GOAL
 <stmt_list> --> {<stmt> `;`}
 <stmt> --> <if_stmt> | <while_stmt> | <as_s>  | <declaration>
-<if_stmt> --> cond <bool> `{` { <stmt> ';'} `}`
-<while_stmt> --> repeat `{` <bool> { <stmt> ';' } `}`
+<if_stmt> --> case <bool> `{` { <stmt> ';'} `}`
+<while_stmt> --> echo `{` <bool> { <stmt> ';' } `}`
 <as_s> --> <var> = <expression> `;`
 <declaration> --> <datatype> <var> `;`
 <datatype> --> (CHIBI|MINI|SMALL|REGULAR)
-<var> -->  [a-zA-Z_]{6,8} // our variable rule
+<var> -->  [a-zA-Z_]{6,8} 
 <expression> --> <term> { (`*`|`\` ) <term> }
 <term> --> <term> { (`+`|`-`) <term> }
 <factor> --> [0-9]+ | <var>  | `(` <expression> `)`
@@ -221,4 +221,5 @@ REGULAR var1;
 GOAL
 ```
 ## LR(1) Grammar and parse tree (H).
+![image](https://user-images.githubusercontent.com/87450136/202886034-c1c7d996-50af-42e0-957b-5ef81dd71971.png)
 
