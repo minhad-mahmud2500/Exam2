@@ -9,7 +9,6 @@ public class lexAnalyzer{
     Queue<Integer> tokens = new LinkedList();
     HashMap<String,Integer> map = new HashMap<String, Integer>();
   public static void main(String[] args) {
-    //operational functions
     char[] word = new char[28];
     map.put("GO", 0); 
     map.put("CHIBI", 8); 
@@ -52,7 +51,7 @@ public class lexAnalyzer{
       if (c == '>'|| c == '<'|| c== '!'|| c== '='){
         char d = code.charAt(i+1);
         if (d == '='){
-          word.push(c); word.push(d); //combines chars into char array
+          word.push(c); word.push(d); 
           lex = String.ValueOf(word);
           if (hashes.containsValue(lex)) tokens.add(hashes.get(lex)); 
           else tokens.add(13);
@@ -66,9 +65,7 @@ public class lexAnalyzer{
         else tokens.add(13);
         word = null;
       }
-      //then checks for 1-character operations  
       else if (c != ' ') word.push(c);
-      //then checks for a whitespace to push a word character to a char array  
       else{
         lex = String.valueOf(word);
         word = null;
