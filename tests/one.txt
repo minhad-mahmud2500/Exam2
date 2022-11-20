@@ -1,0 +1,13 @@
+GO
+
+  CHIB var1One;
+  var1One = 10 + (2 + 5);
+
+  cas ( var1One >= 20) {
+    var1Oe = 50;
+  }
+
+  SMA varTwo;
+  varTwo = var1One + 10;
+
+GOAL
