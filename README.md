@@ -70,8 +70,8 @@ Invalid expression:
 | Token Code | Regex         |
 | ---------- | ------------- |
 | VAR        | [a-zA-Z]{6,8} |
-| COND       | case          |
-| REPEAT     | echo          |
+| CASE       | case          |
+| ECHO       | echo          |
 | GO         | go            |
 | GOAL       | goal          |
 
