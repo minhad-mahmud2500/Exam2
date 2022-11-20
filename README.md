@@ -3,7 +3,7 @@
 
 ## Lexical Rules
 
-Each Token / Lexical should be seperated by a space
+Each Token /lexame should be seperated by a space
 
 Code starts with `GO` and ends with `GOAL`.All the statements are between the blocks
 
@@ -70,8 +70,8 @@ Invalid expression:
 | Token Code | Regex         |
 | ---------- | ------------- |
 | VAR        | [a-zA-Z]{6,8} |
-| COND       | cond          |
-| REPEAT     | repeat        |
+| COND       | case          |
+| REPEAT     | echo          |
 | GO         | go            |
 | GOAL       | goal          |
 
