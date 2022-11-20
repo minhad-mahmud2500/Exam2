@@ -129,4 +129,96 @@ read from left to right. And an LL grammar of 1.
 
 ## Is it Ambiguous Grammar? (D)
 There is **no ambiguity**.
+### Failing Cases
+```
+GO
+
+  CHIB var1one;
+  var1one = 10 + (2 + 5);
+
+  cas ( var10ne >= 20) {
+    var1ne = 50;
+  }
+
+  SMA varTwo;
+  varTwo = var10ne + 10;
+
+GOAL
+```
+Lexical Errors:
+
+- CHIB: Supposed to be CHIBI
+- cas: Supposed to be case
+- var1ne:  Supposed to be var1one
+- SMA: Supposed to be VENTI
+- var10ne: Supposed to be var1one
+
+```
+GO
+
+  SMALL var1;
+  var1 = 10+7 - 2;
+
+  case (var1 < = 13 {
+    var1 = 20;
+
+    case (var1 == 20) {
+      var1 = var1 % 4;
+
+    SMALL varTwo;
+    var1 = 10 + 13 * ( 5 + 6 ;
+  }
+GOAL
+Lexical Errors:
+- 10+7 : Need to have a space between the operands 10 + 7
+- < = : shouldn't be separated. <=
+- 13 ) : boolean expression should end with )
+- 4; } : boolean statement should end with }
+- 5 + 6 : mathematical parenthesis should be closed with )
+```
+### Passing Cases
+```
+GO
+
+  CHIBI varOne;
+  varOne = 2;
+
+  MINI varTwo;
+  varTwo = 56 + 100 + (2 + (5 * 2)) * varOne;
+
+  case (varOne != varTwo) {
+    case (varOne <= varTwo) {
+      varOne = varTwo * 8;
+    }
+  }
+
+  MINI varThree;
+  varThree = 0;
+
+  loop (varThree <= 3) {
+    varThree = varThree + 1;
+
+    case (varThree == 6) {
+      varThree = varThree * 1;
+    }
+  }
+
+GOAL
+```
+```
+GO
+REGULAR var1;
+ varOne = 10 + (5 + -2) * 4;
+  MINI var2;
+  var2 = 2 * var1;
+
+  CHIBI it;
+  it = 0;
+
+  echo (ite < 5) {
+    it = it + 1;
+  }
+GOAL
+```
 ## LR(1) Grammar and parse tree (H).
+
