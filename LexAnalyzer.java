@@ -9,13 +9,12 @@ public class lexAnalyzer{
     Queue<Integer> tokens = new LinkedList();
     HashMap<String,Integer> map = new HashMap<String, Integer>();
   public static void main(String[] args) {
-    char[] word = new char[28];
+    char[] word = new char[27];
     map.put("GO", 0); 
     map.put("CHIBI", 8); 
     map.put("MINI", 9); 
     map.put("SMALL", 10);
 		map.put("REGULAR", 14);
-		map.put("tsu", 15); 
     map.put("{", 16); 
     map.put("}", 17);   
     map.put("(", 18); 
@@ -42,8 +41,8 @@ public class lexAnalyzer{
     String parseThis, lex, word; 
     Pattern digit = Pattern.compile("([0-9]*[o,h,d,b]?)|([0-9]*[.].[0-9]*)"); 
     Pattern variable = Pattern.compile("[a-z]*[A-Za-z0-9_]*"); 
-    Matcher digi = digit.matcher(lex); boolean isDigi = digi.find();
-    Matcher vari = variable.matcher(lex); boolean isVari = vari.find();
+    Matcher digi = digit.matcher(lex); boolean isDigit = digit.find();
+    Matcher variable = variable.matcher(lex); boolean isVariable = variable.find();
     Path yourcode = Path.of("./one.txt");
     String code = Files.readString(yourcode);
     for (int i=0; i < code.length(); i++){
@@ -69,8 +68,8 @@ public class lexAnalyzer{
       else{
         lex = String.valueOf(word);
         word = null;
-        if (isDigi) tokens.add(1);
-        else if (isVari) tokens.add(2);
+        if (isDigit) tokens.add(1);
+        else if (isVariable) tokens.add(2);
         else if (hashes.containsValue(lex)) tokens.add(hashes.get(lex));  
         else tokens.add(13); 
       }
