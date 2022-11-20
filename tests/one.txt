@@ -1,13 +1,13 @@
 GO
 
-  CHIB var1One;
-  var1One = 10 + (2 + 5);
+  CHIB var1one;
+  var1one = 10 + (2 + 5);
 
-  cas ( var1One >= 20) {
-    var1Oe = 50;
+  cas ( var10ne >= 20) {
+    var1ne = 50;
   }
 
   SMA varTwo;
-  varTwo = var1One + 10;
+  varTwo = var10ne + 10;
 
 GOAL
