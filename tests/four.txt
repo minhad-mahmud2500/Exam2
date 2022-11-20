@@ -1,0 +1,13 @@
+GO
+REGULAR var1;
+ varOne = 10 + (5 + -2) * 4;
+  MINI var2;
+  var2 = 2 * var1;
+
+  CHIBI it;
+  it = 0;
+
+  echo (ite < 5) {
+    it = it + 1;
+  }
+GOAL
