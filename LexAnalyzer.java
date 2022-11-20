@@ -43,7 +43,7 @@ public class lexAnalyzer{
     Pattern variable = Pattern.compile("[a-z]*[A-Za-z0-9_]*"); 
     Matcher digi = digit.matcher(lex); boolean isDigit = digit.find();
     Matcher variable = variable.matcher(lex); boolean isVariable = variable.find();
-    Path yourcode = Path.of("./one.txt");
+    Path yourcode = Path.of("./tests/one.txt");
     String code = Files.readString(yourcode);
     for (int i=0; i < code.length(); i++){
       char c = code.charAt(i);
