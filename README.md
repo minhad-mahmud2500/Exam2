@@ -124,10 +124,8 @@ E --> (e)               Factor can be an expression in parentheses
 ```
 
 ## Is it a LL Grammar?
-
 read from left to right. And an LL grammar of 1.
-
-## Is it Ambiguous Grammar? (D)
+## Is it Ambiguous Grammar?
 There is **no ambiguity**.
 ### Failing Cases
 ```
@@ -220,6 +218,18 @@ REGULAR var1;
   }
 GOAL
 ```
-## LR(1) Grammar and parse tree (H).
+## LR(1) Grammar and parse tree.
 ![image](https://user-images.githubusercontent.com/87450136/202886034-c1c7d996-50af-42e0-957b-5ef81dd71971.png)
+![image](https://user-images.githubusercontent.com/87450136/202886070-1ad35f1a-9dae-4888-a02d-bed336001b3e.png)
+fail-one.txt
+![image](https://user-images.githubusercontent.com/87450136/202886096-b4f10670-40ee-44c2-b9f7-1d9603e3018d.png)
+fail-two.txt
+![image](https://user-images.githubusercontent.com/87450136/202886127-de85de38-bdec-44c3-90e4-db33eab85ee2.png)
+pass-three.txt
+![image](https://user-images.githubusercontent.com/87450136/202886153-20a6a591-d695-4f1a-847c-53bda79e617b.png)
+pass-four.txt
+![image](https://user-images.githubusercontent.com/87450136/202886174-ba818f0d-425b-4340-9c24-d170afaa6ad6.png)
+
+
+
 
