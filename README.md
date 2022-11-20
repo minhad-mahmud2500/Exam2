@@ -169,13 +169,13 @@ GO
     var1 = 10 + 13 * ( 5 + 6 ;
   }
 GOAL
+```
 Lexical Errors:
 - 10+7 : Need to have a space between the operands 10 + 7
 - < = : shouldn't be separated. <=
 - 13 ) : boolean expression should end with )
 - 4; } : boolean statement should end with }
 - 5 + 6 : mathematical parenthesis should be closed with )
-```
 ### Passing Cases
 ```
 GO
