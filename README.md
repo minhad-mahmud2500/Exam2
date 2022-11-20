@@ -127,3 +127,7 @@ E --> (e)               Factor can be an expression in parentheses
 
 the code is read from left to right. And an LL grammar of 1. Read one line ahead before it performs the next actions.
 
+## Is it Ambiguous Grammar? (D)
+
+Looking at our LR table, if we had any ambiguity, our LR table blocks would be highlighted in red in the action block. The picture is show below. So there is **no ambiguity**.
+## LR(1) Grammar and parse tree (H).
