@@ -148,7 +148,7 @@ Lexical Errors:
 - CHIB: Supposed to be CHIBI
 - cas: Supposed to be case
 - var1ne:  Supposed to be var1one
-- SMA: Supposed to be VENTI
+- SMA: Supposed to be SMALL
 - var10ne: Supposed to be var1one
 
 ```
