@@ -82,8 +82,8 @@ Invalid expression:
 | ASSIGNMENT       | =         | =     |
 | BLOCKOPEN        | {         | {     |
 | BLOCKCLOSE       | }         | }     |
-| PARENTHESOPEN    | (         | )     |
-| PARENTHESCLOSE   | )         | )     |
+| PARENTHESIS_OPEN | (         | )     |
+| PARENTHESIS_CLOSE| )         | )     |
 
 ## Priority Order
 
