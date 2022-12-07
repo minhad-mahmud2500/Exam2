@@ -193,7 +193,7 @@ GO
   MINI varThree;
   varThree = 0;
 
-  loop (varThree <= 3) {
+  echo (varThree <= 3) {
     varThree = varThree + 1;
 
     case (varThree == 6) {
