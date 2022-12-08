@@ -213,7 +213,7 @@ REGULAR var1;
   CHIBI it;
   it = 0;
 
-  echo (ite < 5) {
+  echo (it < 5) {
     it = it + 1;
   }
 GOAL
