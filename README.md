@@ -219,16 +219,17 @@ REGULAR var1;
 GOAL
 ```
 ## LR(1) Grammar and parse tree.
-![image](https://user-images.githubusercontent.com/87450136/202886034-c1c7d996-50af-42e0-957b-5ef81dd71971.png)
-![image](https://user-images.githubusercontent.com/87450136/202886070-1ad35f1a-9dae-4888-a02d-bed336001b3e.png)
-fail-one.txt
-![image](https://user-images.githubusercontent.com/87450136/202886096-b4f10670-40ee-44c2-b9f7-1d9603e3018d.png)
-fail-two.txt
+![image](https://user-images.githubusercontent.com/87450136/206337166-7a6255b1-bff7-4adc-9ac3-e2857688217d.png)
+![jsmachines sourceforge net_machines_lr1 html](https://user-images.githubusercontent.com/87450136/206337914-f325263b-1fb3-43dc-806c-816a76bb8a81.png)
+fail
+![image](https://user-images.githubusercontent.com/87450136/206338428-659fb249-7403-4a52-a186-b811dd2e045b.png)
+fail
 ![image](https://user-images.githubusercontent.com/87450136/202886127-de85de38-bdec-44c3-90e4-db33eab85ee2.png)
-pass-three.txt
-![image](https://user-images.githubusercontent.com/87450136/202886153-20a6a591-d695-4f1a-847c-53bda79e617b.png)
-pass-four.txt
-![image](https://user-images.githubusercontent.com/87450136/202886174-ba818f0d-425b-4340-9c24-d170afaa6ad6.png)
+pass
+![image]![image](https://user-images.githubusercontent.com/87450136/206338108-ac40adbf-f123-4487-8a68-05471c455b88.png)
+pass
+![image](https://user-images.githubusercontent.com/87450136/206338276-d2033906-1d8c-4ce9-b4e4-24e60b7f88cf.png)
+
 
 
 
