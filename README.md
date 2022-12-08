@@ -224,7 +224,8 @@ GOAL
 fail
 ![image](https://user-images.githubusercontent.com/87450136/206338428-659fb249-7403-4a52-a186-b811dd2e045b.png)
 fail
-![image](https://user-images.githubusercontent.com/87450136/202886127-de85de38-bdec-44c3-90e4-db33eab85ee2.png)
+![image](https://user-images.githubusercontent.com/87450136/206340721-dd4f2bc1-6a47-47ef-bae1-781e55007716.png)
+
 pass
 ![image]![image](https://user-images.githubusercontent.com/87450136/206338108-ac40adbf-f123-4487-8a68-05471c455b88.png)
 pass
